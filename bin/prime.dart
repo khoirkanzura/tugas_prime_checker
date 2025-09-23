@@ -15,8 +15,10 @@ void main() {
   print("\nCek angka: $n");
   print(cekPrima(n) ? "$n adalah bilangan prima" : "$n bukan bilangan prima");
 
-  print("\nDaftar bilangan prima sampai $n:");
+  print("Daftar bilangan prima sampai $n:");
   for (int i = 2; i <= n; i++) {
-    if (cekPrima(i)) print(i);
+    if (cekPrima(i)) {
+      print(i);
+    }
   }
 }
