@@ -9,12 +9,13 @@ bool cekPrima(int n) {
 }
 
 void main() {
-  stdout.write("Masukkan angka: ");
-  int angka = int.parse(stdin.readLineSync()!);
+  stdout.write("Masukkan angka N: ");
+  int n = int.parse(stdin.readLineSync()!);
 
-  if (cekPrima(angka)) {
-    print("$angka adalah bilangan prima");
-  } else {
-    print("$angka bukan bilangan prima");
+  print("Daftar bilangan prima sampai $n:");
+  for (int i = 2; i <= n; i++) {
+    if (cekPrima(i)) {
+      print(i);
+    }
   }
 }
